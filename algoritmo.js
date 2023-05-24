@@ -3,6 +3,7 @@ var Encryptor = function () {
     this.mensaje = null;
 };
 
+
 Encryptor.prototype.setNewMsj = function (mensaje) {
     var nuevoMensaje = "";
     var msj = mensaje.toString();
@@ -13,7 +14,6 @@ Encryptor.prototype.setNewMsj = function (mensaje) {
         var newAscii = calculador(asciiCode);
         var newChar = nuevoCaracter(newAscii);
         nuevoMensaje = nuevoMensaje.concat(newChar.toString());
-        
     }
     console.log(nuevoMensaje);
     return nuevoMensaje;
